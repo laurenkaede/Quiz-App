@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 nav {
     background-color: black;
     padding: 15px 25px;
@@ -21,6 +27,6 @@ ul li {
 nav a {
     text-decoration: none;
     color: white;
-    margin-right: 5px;
+    margin-right: 35px;
     margin-left: 5px;
 }

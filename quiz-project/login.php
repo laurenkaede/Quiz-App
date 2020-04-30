@@ -1,9 +1,9 @@
 <?php
-
+require('./config/db.php');
 ?>
 
 
-<?php require('./inc/header.html'); ?>
+<?php require('./inc/navbar.html'); ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -15,7 +15,7 @@
     <title>Login</title>
 </head>
 <body>
-    
+    <h3>Login Page</h3>
 
 
 
