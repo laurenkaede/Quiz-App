@@ -1,0 +1,1 @@
+console.log("scoreboard page running");
