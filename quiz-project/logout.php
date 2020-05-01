@@ -2,10 +2,7 @@
 session_start();
 
 if (isset($_SESSION['userId'])) {
-    require('./config/db.php');
-
-    $userId = $_SESSION['userId'];
-} else {
+    session_destroy();
     header('Location: http://localhost:8888/quiz-project/index.php');
 }
 
@@ -21,18 +18,18 @@ if (isset($_SESSION['userId'])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./inc/navbar.css">
-    <link rel="stylesheet" href="./css/scoreboard.css">
-    <title>Scoreboard</title>
+    <link rel="stylesheet" href="./css/logout.css">
+    <title>Logout</title>
 </head>
 
 <body>
     <div class="container">
-        <h3>Top 10 Scores</h3>
+        <h3>Log Out</h3>
 
 
 
     </div>
-    <script src="./js/scoreboard.js"></script>
+    <script src="./js/logout.js"></script>
 </body>
 
 </html>

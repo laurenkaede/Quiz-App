@@ -1,20 +1,32 @@
 <?php
+session_start();
 
-    if (isset($_POST['register'])) {
-        require('./config/db.php');
+if (isset($_POST['register'])) {
+    require('./config/db.php');
 
-        $userName = filter_var($_POST['userName'], FILTER_SANITIZE_STRING);
-        $userEmail = filter_var($_POST['userEmail'], FILTER_SANITIZE_EMAIL);
-        $userPassword = filter_var($_POST['userPassword'], FILTER_SANITIZE_STRING);
+    $userName = filter_var($_POST["username"], FILTER_SANITIZE_STRING);
+    $userEmail = filter_var($_POST["email"], FILTER_SANITIZE_EMAIL);
+    $userPassword = filter_var($_POST["password"], FILTER_SANITIZE_STRING);
+    $passwordHashed = password_hash($userPassword, PASSWORD_DEFAULT);
 
-        if (filter_var ($userEmail, FILTER_VALIDATE_EMAIL) ) {
-            echo $userEmail . " " . $userName . " " . $userPassword;
-        }
+    if (filter_var($userEmail, FILTER_VALIDATE_EMAIL)) {
+        $stmt = $pdo->prepare('SELECT * from Users WHERE email = ?');
+        $stmt->execute([$userEmail]);
+        $totalUsers = $stmt->rowCount();
+
+        if ($totalUsers > 0) {
+            $emailTaken = "This email address already has an account. Please login.";
+        } else {
+            $stmt = $pdo->prepare('INSERT into Users (username, email, password, role, score, time) VALUES (?, ?, ?, ?, ?, ?)');
+            $stmt->execute([$userName, $userEmail, $passwordHashed, "Guest", 0, 0]);
+            header('Location: http://localhost:8888/quiz-project/index.php');
+        } 
     }
+}
 
 ?>
 
-<?php require('./inc/navbar.html'); ?>
+<?php require('./inc/navbar.php'); ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -29,17 +41,23 @@
 
 <body>
     <div class="container">
-        <h3>Register</h3>
+        <h1>Register New User</h1>
 
         <form action="register.php" method="POST">
-            <label for="userName">User Name</label>
-            <input required type="text" name="userName" placeholder="Enter User Name" />
 
-            <label for="userEmail">Email Address</label>
-            <input required type="email" name="userEmail" placeholder="Enter Email Address" />
-
-            <label for="userPassword">Password</label>
-            <input required type="password" name="userPassword" placeholder="Enter Password" />
+            <label for="username">User Name</label>
+            <input required type="text" name="username" placeholder="Enter User Name" />
+            <br />
+            <label for="email">Email Address</label>
+            <input required type="email" name="email" placeholder="Enter Email Address" />
+            <br />
+            <?php if (isset($emailTaken)) { ?>
+                <p><?php echo $emailTaken ?> </p>
+            <?php } ?>
+            
+            <label for="password">Password</label>
+            <input required type="password" name="password" placeholder="Enter Password" />
+            <br />
 
             <button name="register" type="submit">Register</button>
 

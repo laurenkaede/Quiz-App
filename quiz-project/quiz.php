@@ -21,18 +21,18 @@ if (isset($_SESSION['userId'])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./inc/navbar.css">
-    <link rel="stylesheet" href="./css/scoreboard.css">
-    <title>Scoreboard</title>
+    <link rel="stylesheet" href="./css/quiz.css">
+    <title>Quiz</title>
 </head>
 
 <body>
     <div class="container">
-        <h3>Top 10 Scores</h3>
+        <h3>Welcome to the Quiz!</h3>
 
 
 
     </div>
-    <script src="./js/scoreboard.js"></script>
+    <script src="./js/quiz.js"></script>
 </body>
 
 </html>
