@@ -5,6 +5,10 @@ if (isset($_SESSION['userId'])) {
     require('./config/db.php');
 
     $userId = $_SESSION['userId'];
+
+    $stmt = $pdo -> prepare ('SELECT * from users WHERE id = ?');
+    $stmt -> execute([$userId]);
+    $user = $stmt -> fetch();
 } else {
     header('Location: http://localhost:8888/quiz-project/index.php');
 }
@@ -28,9 +32,6 @@ if (isset($_SESSION['userId'])) {
 <body>
     <div class="container">
         <h3>Top 10 Scores</h3>
-
-
-
     </div>
     <script src="./js/scoreboard.js"></script>
 </body>

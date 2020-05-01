@@ -16,7 +16,7 @@ if (isset($_SESSION['userId'])) {
         $stmt = $pdo -> prepare ('SELECT * from users WHERE id = ?');
         $stmt -> execute([$userId]);
         $user = $stmt -> fetch();
-        
+
 }  else {
     header('Location: http://localhost:8888/quiz-project/index.php');
 }
@@ -38,7 +38,7 @@ if (isset($_SESSION['userId'])) {
 
 <body>
     <div class="container">
-        <h1>Dashboard Portal</h1>
+        <h1>Dashboard Portal - <?php echo $user -> username ?></h1>
         <h3>Update Details</h3>
 
         <form action="dashboard.php" method="POST"> 
@@ -46,7 +46,7 @@ if (isset($_SESSION['userId'])) {
 
             <label for="userName">User Name</label>
             <input required type="text" name="userName" placeholder="Enter User Name"  value = "<?php echo $user -> username ?>" />
-
+            <br />
             <label for="userEmail">Email Address</label>
             <input required type="email" name="userEmail" placeholder="Enter Email Address" value = "<?php echo $user -> email ?>" />
             <br />

@@ -5,6 +5,10 @@ if (isset($_SESSION['userId'])) {
     require('./config/db.php');
 
     $userId = $_SESSION['userId'];
+
+    $stmt = $pdo -> prepare ('SELECT * from users WHERE id = ?');
+    $stmt -> execute([$userId]);
+    $user = $stmt -> fetch();
 } else {
     header('Location: http://localhost:8888/quiz-project/index.php');
 }

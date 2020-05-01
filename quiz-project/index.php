@@ -16,8 +16,6 @@ if (isset($_SESSION['userId'])) {
     }
 }
 
-
-
 ?>
 
 <?php require('./inc/navbar.php'); ?>
@@ -36,17 +34,12 @@ if (isset($_SESSION['userId'])) {
 <body>
 
     <div class="container">
-    <h5>Please login or Register to access the quiz!</h5>
+    
         <?php if (isset($user)) { ?>
-            <h3>Welcome <?php echo $userName ?></h3>
+            <h3>Welcome to the quiz, <?php echo $user -> username ?>!</h3>
         <?php } else { ?>
-        <h3>Welcome Guest</h3> 
-        <?php } ?>
-
-        <?php if (isset($user)) { ?>
-            <h3>Welcome to the quiz!</h3>
-        <?php } else { ?>
-            <h5>Please login or Register to access the quiz!</h5> 
+        <h3>Welcome Guest!</h3> 
+        <h5>Please login or Register to access the quiz!</h5>
         <?php } ?>
 
     </div>
