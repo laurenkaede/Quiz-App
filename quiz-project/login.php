@@ -34,33 +34,33 @@ if (isset($_POST['login'])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./inc/navbar.css">
-    <link rel="stylesheet" href="./css/login.css">
+    <link rel="stylesheet" href="./css/index.css">
     <title>Login</title>
 </head>
 
 <body>
-    <h3>Login Page</h3>
-    <div class="container">
 
+    <div class="container">
+        <h1>User Login</h1>
         <form action="login.php" method="POST">
 
-            <label for="userEmail">Email Address</label>
+            <label for="userEmail"></label>
             <input required type="email" name="userEmail" placeholder="Enter Email Address" />
             <br />
             <?php if (isset($loginWrong)) { ?>
                 <p><?php echo $loginWrong ?> </p>
             <?php } ?>
-            <label for="userPassword">Password</label>
+            <label for="userPassword"></label>
             <input required type="password" name="userPassword" placeholder="Enter Password" />
 
-            <button name="login" type="submit">Login</button>
+            <button class="btn" name="login" type="submit">Login</button>
 
         </form>
     </div>
 
 
 
-
+    <?php require('./inc/footer.php') ?>
     <script src="./js/login.js"></script>
 </body>
 

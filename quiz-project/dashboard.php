@@ -9,15 +9,13 @@ if (isset($_SESSION['userId'])) {
     if (isset($_POST['edit'])) {
         $userName = filter_var($_POST["userName"], FILTER_SANITIZE_STRING);
         $userEmail = filter_var($_POST["userEmail"], FILTER_SANITIZE_EMAIL);
-        $stmt =  $pdo -> prepare('UPDATE users SET username = ?, email = ? WHERE id = ?');
-        $stmt -> execute([$userName, $userEmail, $userId]);
-        
+        $stmt =  $pdo->prepare('UPDATE users SET username = ?, email = ? WHERE id = ?');
+        $stmt->execute([$userName, $userEmail, $userId]);
     }
-        $stmt = $pdo -> prepare ('SELECT * from users WHERE id = ?');
-        $stmt -> execute([$userId]);
-        $user = $stmt -> fetch();
-
-}  else {
+    $stmt = $pdo->prepare('SELECT * from users WHERE id = ?');
+    $stmt->execute([$userId]);
+    $user = $stmt->fetch();
+} else {
     header('Location: http://localhost:8888/quiz-project/index.php');
 }
 
@@ -32,32 +30,33 @@ if (isset($_SESSION['userId'])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./inc/navbar.css">
-    <link rel="stylesheet" href="./css/dashboard.css">
+    <link rel="stylesheet" href="./css/index.css">
     <title>Dashboard</title>
 </head>
 
 <body>
     <div class="container">
-        <h1>Dashboard Portal - <?php echo $user -> username ?></h1>
-        <h3>Update Details</h3>
+        <h1>Update Details </h1>
 
-        <form action="dashboard.php" method="POST"> 
-            <!-- Update this for PUT -->
+        <form action="dashboard.php" method="POST">
 
-            <label for="userName">User Name</label>
-            <input required type="text" name="userName" placeholder="Enter User Name"  value = "<?php echo $user -> username ?>" />
+            <label class="text" for="userName">User Name:</label>
+            </br>
+            <input required type="text" name="userName" placeholder="Enter User Name" value="<?php echo $user->username ?>" />
             <br />
-            <label for="userEmail">Email Address</label>
-            <input required type="email" name="userEmail" placeholder="Enter Email Address" value = "<?php echo $user -> email ?>" />
+            <label class="text" for="userEmail">Email Address:</label>
+            </br>
+            <input required type="email" name="userEmail" placeholder="Enter Email Address" value="<?php echo $user->email ?>" />
             <br />
             <?php if (isset($emailTaken)) { ?>
                 <p><?php echo $emailTaken ?> </p>
             <?php } ?>
 
-            <button name="edit" type="submit">Edit</button>
+            <button class="btn" name="edit" type="submit">Edit</button>
 
         </form>
     </div>
+    <?php require('./inc/footer.php') ?>
     <script src="./js/dashboard.js"></script>
 </body>
 

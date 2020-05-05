@@ -1,5 +1,5 @@
 <nav>
-  <h3>Quiz</h3>
+  <h3><?php echo $user->username ?></h3>
   <ul>
     <li><a href="index.php">Home</a></li>
 

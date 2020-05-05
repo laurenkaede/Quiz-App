@@ -35,34 +35,35 @@ if (isset($_POST['register'])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./inc/navbar.css">
-    <link rel="stylesheet" href="./css/register.css">
+    <link rel="stylesheet" href="./css/index.css">
     <title>Register</title>
 </head>
 
 <body>
     <div class="container">
-        <h1>Register New User</h1>
+        <h1>Register User</h1>
 
         <form action="register.php" method="POST">
 
-            <label for="username">User Name</label>
+            <label for="username"></label>
             <input required type="text" name="username" placeholder="Enter User Name" />
             <br />
-            <label for="email">Email Address</label>
+            <label for="email"></label>
             <input required type="email" name="email" placeholder="Enter Email Address" />
             <br />
             <?php if (isset($emailTaken)) { ?>
                 <p><?php echo $emailTaken ?> </p>
             <?php } ?>
             
-            <label for="password">Password</label>
+            <label for="password"></label>
             <input required type="password" name="password" placeholder="Enter Password" />
             <br />
 
-            <button name="register" type="submit">Register</button>
+            <button class="btn" name="register" type="submit">Register</button>
 
         </form>
     </div>
+    <?php require('./inc/footer.php') ?>
     <script src="./js/register.js"></script>
 </body>
 
