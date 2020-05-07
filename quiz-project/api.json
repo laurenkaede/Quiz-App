@@ -1,0 +1,202 @@
+{"results": [
+    {
+        "id": "1",
+        "question": "In 'The Little Mermaid,' who is NOT one of Triton’s daughter?",
+        "answer": "Adora",
+        "incorrect_answers": [
+            "Andrina",
+            "Attina",
+            "Alana"
+        ]
+    },
+    {
+        "id": "2",
+        "question": "Which phrase does the Evil Queen in 'Snow White' actually say?",
+        "answer": "Magic mirror, on the wall — who is the fairest one of all?",
+        "incorrect_answers": [
+            "Mirror, mirror, on the wall — who is the fairest of them all?",
+            "Mirror, mirror, on the wall — who is the fairest one of all?",
+            "Magic mirror, on the wall — who is the fairest of them all?"
+        ]
+    },
+    {
+        "id": "3",
+        "question": "In the movie 'Tangled,' Flynn Rider is wanted dead or alive according to his wanted poster because he's a...",
+        "answer": "Thief",
+        "incorrect_answers": [
+            "Bandit",
+            "Treasonist",
+            "Robber"
+        ]
+    },
+    {
+        "id": "4",
+        "question": "In 'Sleeping Beauty,' what is the name of Maleficent’s pet raven?",
+        "answer": "Diablo",
+        "incorrect_answers": [
+            "Malum",
+            "Mauvais",
+            "Diable"
+        ]
+    },
+    {
+        "id": "5",
+        "question": "Finish the lyrics: 'Wouldn't you think I'm the girl, the girl who has everything? Look at this trove, treasures untold…'",
+        "answer": "How many wonders can one cavern hold?",
+        "incorrect_answers": [
+            "It’s full of gizmos and gadgets galore.",
+            "Wonders from all over the world.",
+            "There so much to be known."
+        ]
+    },
+    {
+        "id": "6",
+        "question": "In 'Frozen,' how many brothers does Hans have?",
+        "answer": "12",
+        "incorrect_answers": [
+            "7",
+            "9",
+            "15"
+        ]
+    },
+    {
+        "id": "7",
+        "question": "In 'Pocahontas,' what did Pocahontas see in her dream that made her believe that a change was coming?",
+        "answer": "A spinning arrow",
+        "incorrect_answers": [
+            "A strange cloud formation",
+            "A hawk circling her village",
+            "A burning blue fire"
+        ]
+    },
+    {
+        "id": "8",
+        "question": "Finish the lyrics: 'My soul is spiraling in frozen fractals all around…'",
+        "answer": "And one thought crystallizes like an icy blast.",
+        "incorrect_answers": [
+            "That wraps my heart in a cold and distant past.",
+            "Somehow I’ve now been given a new chance.",
+            "And all my problems are far gone in the past."
+        ]
+    },
+    {
+        "id": "9",
+        "question": "In 'Sleeping Beauty,' what do the fairies arm Prince Phillip with to fight Maleficent?",
+        "answer": "Sword of Truth and Shield of Virtue",
+        "incorrect_answers": [
+            "Sword of Destiny and Shield of Bravery",
+            "Sword of Righteousness and Shield of Honor",
+            "Sword of Valiantness and Shield of Triumph"
+        ]
+    },
+    {
+        "id": "10",
+        "question": "In 'Aladdin,' what does Aladdin, and a reluctant Abu, give to the poor children to eat?",
+        "answer": "Bread",
+        "incorrect_answers": [
+            "Dates",
+            "Apples",
+            "Cheese"
+        ]
+    },
+    {
+        "id": "11",
+        "question": "What is the name of the organization Bernard and Miss Bianca work in 'The Rescuers'?",
+        "answer": "The Rescue Aid Society",
+        "incorrect_answers": [
+            "The International Rescue Organization",
+            "The Rescuers",
+            "The Secret Helpers"
+        ]
+    },
+    {
+        "id": "12",
+        "question": "In 'Beauty and the Beast,' how many eggs does Gaston say he eats in order to stay 'roughly the size of barge'?",
+        "answer": "Five dozen",
+        "incorrect_answers": [
+            "Four Dozen",
+            "Nine Dozen",
+            "Seven Dozen"
+        ]
+    },
+    {
+        "id": "13",
+        "question": "In 'Princess and the Frog,' what fictional country is Prince Naveen from?",
+        "answer": "Maldonia",
+        "incorrect_answers": [
+            "Maramorgos",
+            "Mypos",
+            "Mrač"
+        ]
+    },
+    {
+        "id": "14",
+        "question": "In 'Hercules,' Hades promised not to harm Megara if Hercules gave up his strength for how long?",
+        "answer": "24 hours",
+        "incorrect_answers": [
+            "12 hours",
+            "36 hours",
+            "48 hours"
+        ]
+    },
+    {
+        "id": "15",
+        "question": "On whose shoulders does Dopey stand on in order to dance with Snow White during 'The Silly Song' scene?",
+        "answer": "Sneezy",
+        "incorrect_answers": [
+            "Doc",
+            "Grumpy",
+            "Happy"
+        ]
+    },
+    {
+        "id": "16",
+        "question": "In 'Alice in Wonderland,' aside from a pocket watch, what else is the White Rabbit holding when Alice encounters him?",
+        "answer": "An umbrella",
+        "incorrect_answers": [
+            "A cane",
+            "A top hat",
+            "All of the above"
+        ]
+    },
+    {
+        "id": "17",
+        "question": "How many years does the Genie say he has been trapped in the lamp?",
+        "answer": "10,000 years",
+        "incorrect_answers": [
+            "100 years",
+            "500 years",
+            "1,000 years"
+        ]
+    },
+    {
+        "id": "18",
+        "question": "In 'The Sword in the Stone,' what is the name of Merlin’s pet owl?",
+        "answer": "Archimedes",
+        "incorrect_answers": [
+            "Aristotle",
+            "Socrates",
+            "Plato"
+        ]
+    },
+    {
+        "id": "19",
+        "question": "In 'Lady and the Tramp,' Jim Dear gives his wife Darling, Lady as a gift for…",
+        "answer": "Christmas",
+        "incorrect_answers": [
+            "Valentine's Day",
+            "Her Birthday",
+            "For their Anniversary"
+        ]
+    },
+    {
+        "id": "20",
+        "question": "In 'The Little Mermaid,' what alias does Ursula use when she becomes human?",
+        "answer": "Vanessa",
+        "incorrect_answers": [
+            "Alexis",
+            "Sonia",
+            "Amber"
+        ]
+    }
+]}

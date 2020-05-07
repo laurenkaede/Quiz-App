@@ -9,7 +9,7 @@ if (isset($_SESSION['userId'])) {
     if (isset($_POST['edit'])) {
         $userName = filter_var($_POST["userName"], FILTER_SANITIZE_STRING);
         $userEmail = filter_var($_POST["userEmail"], FILTER_SANITIZE_EMAIL);
-        $stmt =  $pdo->prepare('UPDATE users SET username = ?, email = ? WHERE id = ?');
+        $stmt =  $pdo->prepare('UPDATE users SET username = ?, useremail = ? WHERE id = ?');
         $stmt->execute([$userName, $userEmail, $userId]);
     }
     $stmt = $pdo->prepare('SELECT * from users WHERE id = ?');
@@ -29,6 +29,7 @@ if (isset($_SESSION['userId'])) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="./inc/navbar.css">
     <link rel="stylesheet" href="./css/index.css">
     <title>Dashboard</title>
@@ -46,7 +47,7 @@ if (isset($_SESSION['userId'])) {
             <br />
             <label class="text" for="userEmail">Email Address:</label>
             </br>
-            <input required type="email" name="userEmail" placeholder="Enter Email Address" value="<?php echo $user->email ?>" />
+            <input required type="email" name="userEmail" placeholder="Enter Email Address" value="<?php echo $user->useremail ?>" />
             <br />
             <?php if (isset($emailTaken)) { ?>
                 <p><?php echo $emailTaken ?> </p>

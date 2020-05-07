@@ -47,6 +47,10 @@ if (isset($_SESSION['userId'])) {
             <p class="hud-prefix">Score</p>
             <h1 class="hud-main-text" id="score">0</h1>
           </div>
+          <div id="hud-item">
+            <p class="hud-prefix">Timer</p>
+              <h1 class="hud-main-text" id="timer">00 : 00</h1>
+          </div>
 
         </div>
         <h2 id="question"></h2>
@@ -75,6 +79,7 @@ if (isset($_SESSION['userId'])) {
     </div>
     <?php require('./inc/footer.php') ?>
     <script src="./js/quiz.js"></script>
+    <!-- <script src="./js/wrongAnswers.js"></script> -->
 </body>
 
 </html>

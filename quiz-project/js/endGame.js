@@ -1,30 +1,16 @@
-const username = document.getElementById("username");
+const finalScore = document.getElementById("userScoreDisplay");
+const finalTime = document.getElementById("userTimeDisplay");
+const finalScoreHidden = document.getElementById("userScore");
+const finalTimeHidden = document.getElementById("userTime");
+const mostRecentScore = sessionStorage.getItem("mostRecentScore");
+const mostRecentTime = sessionStorage.getItem("mostRecentTime");
 const saveScoreBtn = document.getElementById("saveScoreBtn");
-const finalScore = document.getElementById("finalScore");
-const mostRecentScore = localStorage.getItem("mostRecentScore");
+const scoreboard = document.getElementById("scoreboard");
 
-const highScores = JSON.parse(localStorage.getItem("highScores")) || [];
+const MAX_QUESTIONS = 20;
+const CORRECT_BONUS = 5;
 
-const MAX_HIGH_SCORES = 10;
-
-finalScore.innerText = mostRecentScore;
-
-username.addEventListener("keyup", () => {
-  saveScoreBtn.disabled = !username.value;
-});
-
-saveHighScore = e => {
-  console.log("clicked the save button!");
-  e.preventDefault();
-
-  const score = {
-    score: Math.floor(Math.random() * 100),
-    name: username.value
-  };
-  highScores.push(score);
-  highScores.sort((a, b) => b.score - a.score);
-  highScores.splice(5);
-
-  localStorage.setItem("highScores", JSON.stringify(highScores));
-  window.location.assign("index.php");
-};
+finalScore.innerText = mostRecentScore + "/" + (MAX_QUESTIONS * CORRECT_BONUS);
+finalTime.innerText = mostRecentTime + " seconds";
+finalScoreHidden.value = mostRecentScore;
+finalTimeHidden.value = mostRecentTime;

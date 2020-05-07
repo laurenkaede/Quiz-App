@@ -7,12 +7,12 @@ if (isset($_POST['login'])) {
     $userEmail = filter_var($_POST["userEmail"], FILTER_SANITIZE_EMAIL);
     $userPassword = filter_var($_POST["userPassword"], FILTER_SANITIZE_STRING);
 
-    $stmt = $pdo->prepare('SELECT * from users WHERE email = ?');
+    $stmt = $pdo->prepare('SELECT * from users WHERE useremail = ?');
     $stmt->execute([$userEmail]);
     $user = $stmt->fetch();
 
     if (isset($user)) {
-        if (password_verify($userPassword, $user->password)) {
+        if (password_verify($userPassword, $user->userpassword)) {
             echo "The password is correct";
             $_SESSION['userId'] = $user->id;
             header('Location: http://localhost:8888/quiz-project/index.php');
@@ -33,6 +33,7 @@ if (isset($_POST['login'])) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="./inc/navbar.css">
     <link rel="stylesheet" href="./css/index.css">
     <title>Login</title>

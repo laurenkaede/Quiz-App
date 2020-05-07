@@ -11,7 +11,7 @@
         $stmt->execute([$userId]);
         $user = $stmt->fetch();
 
-        if($user->role == "Admin") {
+        if($user->userrole == "Admin") {
             $admin = true;
 
             $stmt = $pdo -> prepare('SELECT username from Users');
@@ -36,6 +36,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="./inc/navbar.css">
     <link rel="stylesheet" href="./css/index.css">
     <title>Admin Dashboard</title>
@@ -45,7 +46,7 @@
 
     <?php if ($admin) { ?>
         <?php foreach($users as $user) { ?>
-            <h1><?php echo $user->userName ?></h1>
+            <h1><?php echo $user->username ?></h1>
         <?php } ?>
     <?php } ?>
 

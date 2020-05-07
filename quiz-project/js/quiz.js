@@ -2,6 +2,7 @@ const question = document.getElementById("question");
 const choices = Array.from(document.getElementsByClassName("choice-text"));
 const progressText = document.getElementById("progressText");
 const scoreText = document.getElementById("score");
+const timerText = document.getElementById("timer");
 const progressBarFull = document.getElementById("progressBarFull");
 const loader = document.getElementById("loader");
 const game = document.getElementById("game");
@@ -13,13 +14,29 @@ let questionCounter = 0;
 let availableQuesions = [];
 let questions = [];
 
-fetch(
-  // "https://trivia.propernerd.com/api/questions?limit=5&random=true"
-  "https://opentdb.com/api.php?amount=10&category=9&difficulty=easy&type=multiple"
-)
+let totalSeconds = 0;
+setInterval(setTime, 1000);
+
+function setTime() {
+  ++totalSeconds;
+  timerText.innerHTML =
+    pad(parseInt(totalSeconds / 60)) + " : " + pad(totalSeconds % 60);
+}
+
+function pad(val) {
+  let valString = val + "";
+  if (valString.length < 2) {
+    return "0" + valString;
+  } else {
+    return valString;
+  }
+}
+
+fetch("./api.json")
   .then((res) => {
     return res.json();
   })
+
   .then((loadedQuestions) => {
     console.log(loadedQuestions.results);
     questions = loadedQuestions.results.map((loadedQuestion) => {
@@ -32,7 +49,7 @@ fetch(
       answerChoices.splice(
         formattedQuestion.answer - 1,
         0,
-        loadedQuestion.correct_answer
+        loadedQuestion.answer
       );
 
       answerChoices.forEach((choice, index) => {
@@ -46,16 +63,18 @@ fetch(
     startGame();
   })
   .catch((err) => {
-    console.error(err);
+    console.log(err);
   });
 
-const CORRECT_BONUS = 10;
-const MAX_QUESTIONS = 10;
+const CORRECT_BONUS = 5;
+const MAX_QUESTIONS = 20;
 
 startGame = () => {
   questionCounter = 0;
   score = 0;
+  totalSeconds = 0;
   availableQuesions = [...questions];
+
   getNewQuestion();
   game.classList.remove("hidden");
   loader.classList.add("hidden");
@@ -63,9 +82,11 @@ startGame = () => {
 
 getNewQuestion = () => {
   if (availableQuesions.length === 0 || questionCounter >= MAX_QUESTIONS) {
-    localStorage.setItem("mostRecentScore", score);
+    sessionStorage.setItem("mostRecentScore", score);
+    sessionStorage.setItem("mostRecentTime", totalSeconds);
     return window.location.assign("endGame.php");
   }
+
   questionCounter++;
   progressText.innerText = `Question ${questionCounter}/${MAX_QUESTIONS}`;
   progressBarFull.style.width = `${(questionCounter / MAX_QUESTIONS) * 100}%`;

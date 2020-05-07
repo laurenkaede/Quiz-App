@@ -34,10 +34,10 @@ if (isset($_SESSION['userId'])) {
         <?php if (isset($user)) { ?>
             <div class="container">
                 <div id="home" class="flex-center flex-column">
-                    <h1>Welcome to the quiz, <?php echo $user->username ?>!</h1>
+                    <h1>Welcome to the Disney quiz, <?php echo $user->username ?>!</h1>
 
                     <a class="btn" href="quiz.php">Play</a>
-                    <a class="btn" href="scoreboard.php">Top 10 High Scores</a>
+                    <a class="btn" href="scoreboard.php">Top 10 Scores</a>
 
                 </div>
             </div>

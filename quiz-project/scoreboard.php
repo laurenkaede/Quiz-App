@@ -1,20 +1,23 @@
 <?php
 session_start();
-
 if (isset($_SESSION['userId'])) {
     require('./config/db.php');
 
     $userId = $_SESSION['userId'];
+    $sql = 'SELECT username, userscore, usertime FROM users ORDER by userscore DESC, usertime ASC LIMIT 10';
 
-    $stmt = $pdo -> prepare ('SELECT * from users WHERE id = ?');
-    $stmt -> execute([$userId]);
-    $user = $stmt -> fetch();
+    $stmt = $pdo->prepare($sql);
+    $stmt->execute();
+    $users = $stmt->fetchAll();
+
+    $stmt = $pdo->prepare('SELECT * from users WHERE id = ?');
+    $stmt->execute([$userId]);
+    $user = $stmt->fetch();
 } else {
     header('Location: http://localhost:8888/quiz-project/index.php');
 }
 
 ?>
-
 
 <?php require('./inc/navbar.php'); ?>
 
@@ -24,6 +27,7 @@ if (isset($_SESSION['userId'])) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="./inc/navbar.css">
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/scoreboard.css">
@@ -31,12 +35,37 @@ if (isset($_SESSION['userId'])) {
 </head>
 
 <body>
-<div class="container">
-      <div id="highScores" class="flex-center flex-column">
-        <h1 id="finalScore">Top 10 High Scores</h1>
-        <ul id="highScoresList"></ul>
-        <a class="btn" href="index.php">Go Home</a>
-      </div>
+    <div class="container">
+        <div id="highScores" class="flex-center flex-column">
+            <h1 id="finalScore">Top 10 High Scores</h1>
+            <table>
+                <thead>
+
+                    <tr>
+                        <th>User Name</th>
+                        <th>Score</th>
+                        <th>Time (s)</th>
+                    </tr>
+
+                    <?php foreach ($users as $score) { ?>
+                        <tr>
+                            <td> <?php echo $score->username; ?></td>
+                            <td> <?php echo $score->userscore; ?></td>
+                            <td> <?php echo $score->usertime; ?></td>
+                        </tr>
+                    <?php } ?>
+
+                <tbody>
+            </table>
+            </br>
+            </br>
+            </br>
+            <?php if($user->userscore > 0 ) { ?>
+                <a class="btn" href="quiz.php">Play Again</a>
+        <?php } ?>
+            
+            <a class="btn" href="index.php">Go Home</a>
+        </div>
     </div>
     <?php require('./inc/footer.php') ?>
     <script src="./js/scoreboard.js"></script>

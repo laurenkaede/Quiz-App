@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Open+Sans+Condensed:wght@300&family=Quicksand&display=swap');
+@import url(http://allfont.net/allfont.css?fonts=disneypark);
+
 :root {
   background-image: linear-gradient(
     to bottom,
@@ -12,7 +15,9 @@
 
 * {
   box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Quicksand', sans-serif;
+  /* font-family: 'Amatic SC', cursive; */
+  /* font-family: 'Open Sans Condensed', sans-serif; */
   margin: 0;
   padding: 0;
   color: #333;
@@ -25,9 +30,11 @@ h4 {
 }
 
 h1 {
-  font-size: 5.4rem;
+  font-family: 'DisneyPark', arial;
+  font-size: 7.6rem;
   color: #f8ecf4;
   margin-bottom: 5rem;
+  text-align: center;
 }
 
 h1 > span {
@@ -42,7 +49,8 @@ h2 {
 }
 
 h3 {
-  font-size: 2.6rem;
+  font-family: 'DisneyPark', arial;
+  font-size: 4.6rem;
   font-weight: 500;
   color: #ca8dd2;
 }
@@ -55,7 +63,10 @@ ul {
   color: rgb(182, 112, 182);
 }
 
+
+
 .container {
+  background-color: black;
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -92,7 +103,7 @@ ul {
 }
 
 .btn {
-  font-size: 1.8rem;
+  font-size: 2.4rem;
   padding: 1rem 0;
   width: 20rem;
   text-align: center;
@@ -148,7 +159,7 @@ label {
 footer {
   padding-bottom: 10px;
   padding-right: 10px;
-  font-size: 2rem;
+  font-size: 3rem;
   position: fixed;
   left: 0;
   bottom: 0;
