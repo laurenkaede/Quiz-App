@@ -20,7 +20,7 @@ if (isset($_POST['register'])) {
             $stmt = $pdo->prepare('INSERT into Users (username, useremail, userpassword, userrole, userscore, usertime) VALUES (?, ?, ?, ?, ?, ?)');
             $stmt->execute([$userName, $userEmail, $passwordHashed, "Guest", 0, 0]);
             header('Location: http://localhost:8888/quiz-project/index.php');
-        } 
+        }
     }
 }
 
@@ -42,27 +42,29 @@ if (isset($_POST['register'])) {
 
 <body>
     <div class="container">
-        <h1>Register User</h1>
+        <div id="home" class="flex-center flex-column content">
+            <h1>Register User</h1>
 
-        <form action="register.php" method="POST">
+            <form action="register.php" method="POST">
 
-            <label for="username"></label>
-            <input required type="text" name="username" placeholder="Enter User Name" />
-            <br />
-            <label for="useremail"></label>
-            <input required type="email" name="useremail" placeholder="Enter Email Address" />
-            <br />
-            <?php if (isset($emailTaken)) { ?>
-                <p><?php echo $emailTaken ?> </p>
-            <?php } ?>
-            
-            <label for="userpassword"></label>
-            <input required type="password" name="userpassword" placeholder="Enter Password" />
-            <br />
+                <label for="username"></label>
+                <input required type="text" name="username" placeholder="Enter User Name" />
+                <br />
+                <label for="useremail"></label>
+                <input required type="email" name="useremail" placeholder="Enter Email Address" />
+                <br />
+                <?php if (isset($emailTaken)) { ?>
+                    <p><?php echo $emailTaken ?> </p>
+                <?php } ?>
 
-            <button class="btn" name="register" type="submit">Register</button>
+                <label for="userpassword"></label>
+                <input required type="password" name="userpassword" placeholder="Enter Password" />
+                <br />
 
-        </form>
+                <button class="btn" name="register" type="submit">Register</button>
+
+            </form>
+        </div>
     </div>
     <?php require('./inc/footer.php') ?>
     <script src="./js/register.js"></script>

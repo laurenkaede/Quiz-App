@@ -22,18 +22,27 @@ table {
     width: 95%;
     border-collapse: collapse;
     overflow: hidden;
+    border: violet;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    /* background-image: linear-gradient(
+      to bottom,
+      #ca8dd2,
+      #d9a4d8,
+      #e6bbe0,
+      #f0d3e9,
+      #f8ecf4
+    ); */
   }
   
   th,
   td {
     padding: 15px;
-    background-color: rgba(255, 255, 255, 0.2);
     color: #9567aa;
-    font-size: 18px;
+    font-size: 20px;
     text-align: center;
-    font-size: 16px;
     font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.8);
+
   }
   
   th {
@@ -41,12 +50,12 @@ table {
   }
   
   thead th {
-    background-color: #c896e6;
+    background-color: #e2c0f7;
     width: 150px;
   }
   
   tbody tr:hover {
-    background-color: rgba(244, 212, 247, 0.3);
+    background-color: rgba(244, 212, 247, 0.8);
   }
   
   tbody td {

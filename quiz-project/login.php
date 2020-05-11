@@ -41,22 +41,26 @@ if (isset($_POST['login'])) {
 
 <body>
 
-    <div class="container">
-        <h1>User Login</h1>
-        <form action="login.php" method="POST">
+    <div class="container" class="background">
+        <div id="home" class="flex-center flex-column content">
+            <h1>User Login</h1>
+            <form action="login.php" method="POST">
 
-            <label for="userEmail"></label>
-            <input required type="email" name="userEmail" placeholder="Enter Email Address" />
-            <br />
-            <?php if (isset($loginWrong)) { ?>
-                <p><?php echo $loginWrong ?> </p>
-            <?php } ?>
-            <label for="userPassword"></label>
-            <input required type="password" name="userPassword" placeholder="Enter Password" />
+                <label for="userEmail"></label>
+                <input required type="email" name="userEmail" placeholder="Enter Email Address" />
+                <br />
 
-            <button class="btn" name="login" type="submit">Login</button>
+                <?php if (isset($loginWrong)) { ?>
+                    <p><?php echo $loginWrong ?> </p>
+                <?php } ?>
 
-        </form>
+                <label for="userPassword"></label>
+                <input required type="password" name="userPassword" placeholder="Enter Password" />
+
+                <button class="btn" name="login" type="submit">Login</button>
+
+            </form>
+        </div>
     </div>
 
 

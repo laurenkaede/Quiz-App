@@ -38,7 +38,7 @@ if (isset($_SESSION['userId'])) {
 
 <body>
   <div class="container">
-    <div id="end" class="flex-center flex-column">
+    <div id="end" class="flex-center flex-column content">
 
       <form action="endGame.php" method="POST">
 

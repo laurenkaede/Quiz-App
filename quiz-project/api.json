@@ -1,6 +1,8 @@
 {"results": [
     {
         "id": "1",
+        "category": "disney",
+        "image": "img/q1.png",
         "question": "In 'The Little Mermaid,' who is NOT one of Triton’s daughter?",
         "answer": "Adora",
         "incorrect_answers": [
@@ -11,6 +13,8 @@
     },
     {
         "id": "2",
+        "category": "disney",
+        "image": "img/q2.png",
         "question": "Which phrase does the Evil Queen in 'Snow White' actually say?",
         "answer": "Magic mirror, on the wall — who is the fairest one of all?",
         "incorrect_answers": [
@@ -21,6 +25,8 @@
     },
     {
         "id": "3",
+        "category": "disney",
+        "image": "img/q3.png",
         "question": "In the movie 'Tangled,' Flynn Rider is wanted dead or alive according to his wanted poster because he's a...",
         "answer": "Thief",
         "incorrect_answers": [
@@ -31,6 +37,8 @@
     },
     {
         "id": "4",
+        "category": "disney",
+        "image": "img/q4.png",
         "question": "In 'Sleeping Beauty,' what is the name of Maleficent’s pet raven?",
         "answer": "Diablo",
         "incorrect_answers": [
@@ -41,6 +49,8 @@
     },
     {
         "id": "5",
+        "category": "disney",
+        "image": "img/q5.png",
         "question": "Finish the lyrics: 'Wouldn't you think I'm the girl, the girl who has everything? Look at this trove, treasures untold…'",
         "answer": "How many wonders can one cavern hold?",
         "incorrect_answers": [
@@ -51,6 +61,8 @@
     },
     {
         "id": "6",
+        "category": "disney",
+        "image": "img/q6.png",
         "question": "In 'Frozen,' how many brothers does Hans have?",
         "answer": "12",
         "incorrect_answers": [
@@ -61,6 +73,8 @@
     },
     {
         "id": "7",
+        "category": "disney",
+        "image": "img/q7.png",
         "question": "In 'Pocahontas,' what did Pocahontas see in her dream that made her believe that a change was coming?",
         "answer": "A spinning arrow",
         "incorrect_answers": [
@@ -71,6 +85,8 @@
     },
     {
         "id": "8",
+        "category": "disney",
+        "image": "img/q8.png",
         "question": "Finish the lyrics: 'My soul is spiraling in frozen fractals all around…'",
         "answer": "And one thought crystallizes like an icy blast.",
         "incorrect_answers": [
@@ -81,6 +97,8 @@
     },
     {
         "id": "9",
+        "category": "disney",
+        "image": "img/q9.png",
         "question": "In 'Sleeping Beauty,' what do the fairies arm Prince Phillip with to fight Maleficent?",
         "answer": "Sword of Truth and Shield of Virtue",
         "incorrect_answers": [
@@ -91,6 +109,8 @@
     },
     {
         "id": "10",
+        "category": "disney",
+        "image": "img/q10.png",
         "question": "In 'Aladdin,' what does Aladdin, and a reluctant Abu, give to the poor children to eat?",
         "answer": "Bread",
         "incorrect_answers": [
@@ -101,6 +121,8 @@
     },
     {
         "id": "11",
+        "category": "disney",
+        "image": "img/q11.png",
         "question": "What is the name of the organization Bernard and Miss Bianca work in 'The Rescuers'?",
         "answer": "The Rescue Aid Society",
         "incorrect_answers": [
@@ -111,6 +133,8 @@
     },
     {
         "id": "12",
+        "category": "disney",
+        "image": "img/q12.png",
         "question": "In 'Beauty and the Beast,' how many eggs does Gaston say he eats in order to stay 'roughly the size of barge'?",
         "answer": "Five dozen",
         "incorrect_answers": [
@@ -121,6 +145,8 @@
     },
     {
         "id": "13",
+        "category": "disney",
+        "image": "img/q13.png",
         "question": "In 'Princess and the Frog,' what fictional country is Prince Naveen from?",
         "answer": "Maldonia",
         "incorrect_answers": [
@@ -131,6 +157,8 @@
     },
     {
         "id": "14",
+        "category": "disney",
+        "image": "img/q14.png",
         "question": "In 'Hercules,' Hades promised not to harm Megara if Hercules gave up his strength for how long?",
         "answer": "24 hours",
         "incorrect_answers": [
@@ -141,6 +169,8 @@
     },
     {
         "id": "15",
+        "category": "disney",
+        "image": "img/q15.png",
         "question": "On whose shoulders does Dopey stand on in order to dance with Snow White during 'The Silly Song' scene?",
         "answer": "Sneezy",
         "incorrect_answers": [
@@ -151,6 +181,8 @@
     },
     {
         "id": "16",
+        "category": "disney",
+        "image": "img/q16.png",
         "question": "In 'Alice in Wonderland,' aside from a pocket watch, what else is the White Rabbit holding when Alice encounters him?",
         "answer": "An umbrella",
         "incorrect_answers": [
@@ -161,6 +193,8 @@
     },
     {
         "id": "17",
+        "category": "disney",
+        "image": "img/q17.png",
         "question": "How many years does the Genie say he has been trapped in the lamp?",
         "answer": "10,000 years",
         "incorrect_answers": [
@@ -171,6 +205,8 @@
     },
     {
         "id": "18",
+        "category": "disney",
+        "image": "img/q18.png",
         "question": "In 'The Sword in the Stone,' what is the name of Merlin’s pet owl?",
         "answer": "Archimedes",
         "incorrect_answers": [
@@ -181,6 +217,8 @@
     },
     {
         "id": "19",
+        "category": "disney",
+        "image": "img/q19.png",
         "question": "In 'Lady and the Tramp,' Jim Dear gives his wife Darling, Lady as a gift for…",
         "answer": "Christmas",
         "incorrect_answers": [
@@ -191,12 +229,254 @@
     },
     {
         "id": "20",
+        "category": "disney",
+        "image": "img/q20.png",
         "question": "In 'The Little Mermaid,' what alias does Ursula use when she becomes human?",
         "answer": "Vanessa",
         "incorrect_answers": [
             "Alexis",
             "Sonia",
             "Amber"
+        ]
+    },
+    {
+        "id": "21",
+        "category": "avengers",
+        "image": "img/q21.jpeg",
+        "question": "In the comic book series, who were the original Avengers?",
+        "answer": "Ant-Man, the Hulk, Iron Man, Thor and the Wasp",
+        "incorrect_answers": [
+            "Batman, Spider-Man, Superman and Wonder Woman",
+            "The Hulk, Howard The Duck, Thor and Black Widow",
+            "The Incredibles"
+        ]
+    },
+    {
+        "id": "22",
+        "category": "avengers",
+        "image": "img/q22.jpeg",
+        "question": "In the 2012 movie, The Avengers features Captain America. What is his real name?",
+        "answer": "Steve Rogers",
+        "incorrect_answers": [
+            "Buck Rogers",
+            "Ted Rogers",
+            "Tony Stark"
+        ]
+    },
+    {
+        "id": "23",
+        "category": "avengers",
+        "image": "img/q23.jpeg",
+        "question": "Who is the leader of S.H.I.E.L.D?",
+        "answer": "Nick Fury",
+        "incorrect_answers": [
+            "Tony Stark",
+            "Bruce Banner",
+            "Diana Prince"
+        ]
+    },
+    {
+        "id": "24",
+        "category": "avengers",
+        "image": "img/q24.jpeg",
+        "question": "Which superhero does Bruce Banner transform into?",
+        "answer": "The Hulk",
+        "incorrect_answers": [
+            "Iron Man",
+            "Hawkeye",
+            "Thor"
+        ]
+    },
+    {
+        "id": "25",
+        "category": "avengers",
+        "image": "img/q25.jpeg",
+        "question": "Who is Loki's adoptive brother?",
+        "answer": "Thor",
+        "incorrect_answers": [
+            "Tony Stark",
+            "Peter Parker",
+            "Bruce Wayne"
+        ]
+    },
+    {
+        "id": "26",
+        "category": "avengers",
+        "image": "img/q26.jpeg",
+        "question": "What's the name of the mysterious blue glowing cube that Loki uses as a weapon?",
+        "answer": "Tesseract",
+        "incorrect_answers": [
+            "The Orb",
+            "The Force",
+            "UV Lamp"
+        ]
+    },
+    {
+        "id": "27",
+        "category": "avengers",
+        "image": "img/q27.jpeg",
+        "question": "Which US city do the Avengers battle the Chitauri?",
+        "answer": "New York City",
+        "incorrect_answers": [
+            "Los Angeles",
+            "Washington, DC",
+            "Miami"
+        ]
+    },
+    {
+        "id": "28",
+        "category": "avengers",
+        "image": "img/q28.jpeg",
+        "question": "Who diverts a nuclear missile into a wormhole and defeats the Chitauri army?",
+        "answer": "Iron Man",
+        "incorrect_answers": [
+            "Black Widow",
+            "The Hulk",
+            "Thor"
+        ]
+    },
+    {
+        "id": "29",
+        "category": "avengers",
+        "image": "img/q29.jpeg",
+        "question": "What weapon does Thor carry?",
+        "answer": "A Hammer",
+        "incorrect_answers": [
+            "A Bow and Arrow",
+            "A Catapult",
+            "A Sword"
+        ]
+    },
+    {
+        "id": "30",
+        "category": "avengers",
+        "image": "img/q30.jpeg",
+        "question": "In Avengers: Age of Ultron, what is the name of the villain who wants to destroy Earth?",
+        "answer": "Ultron",
+        "incorrect_answers": [
+            "Green Goblin",
+            "The Penguin",
+            "The Joker"
+        ]
+    },
+    {
+        "id": "31",
+        "category": "avengers",
+        "image": "img/q31.jpeg",
+        "question": "How does Black Widow turn the Hulk back into Bruce Banner?",
+        "answer": "With a Lullaby",
+        "incorrect_answers": [
+            "By Asking Politely",
+            "With a Text Message",
+            "With a Special Potion"
+        ]
+    },
+    {
+        "id": "32",
+        "category": "avengers",
+        "image": "img/q32.jpeg",
+        "question": "Who sells Ultron Vibranium and instantly makes $1.285 billion?",
+        "answer": "Ulysses Klaue",
+        "incorrect_answers": [
+            "Bruce Banner",
+            "Diana Prince",
+            "Tony Stark"
+        ]
+    },
+    {
+        "id": "33",
+        "category": "avengers",
+        "image": "img/q33.jpeg",
+        "question": "What is Clint Barton's superhero name?",
+        "answer": "Hawkeye",
+        "incorrect_answers": [
+            "Black Panther",
+            "Iron Man",
+            "Thor"
+        ]
+    },
+    {
+        "id": "34",
+        "category": "avengers",
+        "image": "img/q34.jpeg",
+        "question": "In Avengers: Infinity War, what is the name of the villain who's on a mission to collect the infinity stones?",
+        "answer": "Thanos",
+        "incorrect_answers": [
+            "Malekith",
+            "Darren Cross",
+            "Helmut Demo"
+        ]
+    },
+    {
+        "id": "35",
+        "category": "avengers",
+        "image": "img/q35.jpeg",
+        "question": "Which other superhero team do the Avengers join with to try to prevent this?",
+        "answer": "Guardians of the Galaxy",
+        "incorrect_answers": [
+            "The Fantastic Four",
+            "The Incredibles",
+            "The Mighty Morphin Power Rangers"
+        ]
+    },
+    {
+        "id": "36",
+        "category": "avengers",
+        "image": "img/q36.jpeg",
+        "question": "Peter Parker appears in Avengers: Infinity War. Who's he better known as?",
+        "answer": "Spider-Man",
+        "incorrect_answers": [
+            "Batman",
+            "Captain Underpants",
+            "War Machine"
+        ]
+    },
+    {
+        "id": "37",
+        "category": "avengers",
+        "image": "img/q37.jpeg",
+        "question": "In the films, what does S.H.I.E.L.D. stand for?",
+        "answer": "Strategic Homeland Intervention, Enforcement and Logistics Division",
+        "incorrect_answers": [
+            "Supreme Headquarters, International Espionage, Law-Enforcement Division",
+            "Strategic Hazard Intervention Espionage Logistics Directorate",
+            "Superheroes Help In Exciting Logical Display"
+        ]
+    },
+    {
+        "id": "38",
+        "category": "avengers",
+        "image": "img/q38.jpeg",
+        "question": "Which Marvel character has never appeared in The Avengers films?",
+        "answer": "The Wasp",
+        "incorrect_answers": [
+            "Hawkeye",
+            "Iron Man",
+            "Captain America"
+        ]
+    },
+    {
+        "id": "39",
+        "category": "avengers",
+        "image": "img/q39.jpeg",
+        "question": "Who originally created the Avengers?",
+        "answer": "Stan Lee and Jack Kirby",
+        "incorrect_answers": [
+            "Ant and Dec",
+            "Paul Hollywood and Mary Berry",
+            "Dennis and Gnasher"
+        ]
+    },
+    {
+        "id": "40",
+        "category": "avengers",
+        "image": "img/q40.jpg",
+        "question": "Which Infinity Stone is Dr. Strange responsible for protecting?",
+        "answer": "Time Stone",
+        "incorrect_answers": [
+            "Reality Stone",
+            "Mind Stone",
+            "Space Stone"
         ]
     }
 ]}

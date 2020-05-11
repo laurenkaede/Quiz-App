@@ -6,6 +6,7 @@ const timerText = document.getElementById("timer");
 const progressBarFull = document.getElementById("progressBarFull");
 const loader = document.getElementById("loader");
 const game = document.getElementById("game");
+const image = document.getElementById("image");
 
 let currentQuestion = {};
 let acceptingAnswers = false;
@@ -38,10 +39,12 @@ fetch("./api.json")
   })
 
   .then((loadedQuestions) => {
-    console.log(loadedQuestions.results);
     questions = loadedQuestions.results.map((loadedQuestion) => {
       const formattedQuestion = {
         question: loadedQuestion.question,
+        image: loadedQuestion.image,
+        // category: loadedQuestion.category,
+        // disney: loadedQuestion.category.disney,
       };
 
       const answerChoices = [...loadedQuestion.incorrect_answers];
@@ -94,6 +97,8 @@ getNewQuestion = () => {
   const questionIndex = Math.floor(Math.random() * availableQuesions.length);
   currentQuestion = availableQuesions[questionIndex];
   question.innerText = currentQuestion.question;
+  image.src = currentQuestion.image;
+  console.log(currentQuestion.image);
 
   choices.forEach((choice) => {
     const number = choice.dataset["number"];
@@ -132,3 +137,4 @@ incrementScore = (num) => {
   score += num;
   scoreText.innerText = score;
 };
+

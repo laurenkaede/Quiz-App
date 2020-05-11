@@ -37,25 +37,27 @@ if (isset($_SESSION['userId'])) {
 
 <body>
     <div class="container">
-        <h1>Update Details </h1>
+        <div id="home" class="flex-center flex-column content">
+            <h1>Update Details </h1>
 
-        <form action="dashboard.php" method="POST">
+            <form action="dashboard.php" method="POST">
 
-            <label class="text" for="userName">User Name:</label>
-            </br>
-            <input required type="text" name="userName" placeholder="Enter User Name" value="<?php echo $user->username ?>" />
-            <br />
-            <label class="text" for="userEmail">Email Address:</label>
-            </br>
-            <input required type="email" name="userEmail" placeholder="Enter Email Address" value="<?php echo $user->useremail ?>" />
-            <br />
-            <?php if (isset($emailTaken)) { ?>
-                <p><?php echo $emailTaken ?> </p>
-            <?php } ?>
+                <label class="text" for="userName">User Name:</label>
+                </br>
+                <input required type="text" name="userName" placeholder="Enter User Name" value="<?php echo $user->username ?>" />
+                <br />
+                <label class="text" for="userEmail">Email Address:</label>
+                </br>
+                <input required type="email" name="userEmail" placeholder="Enter Email Address" value="<?php echo $user->useremail ?>" />
+                <br />
+                <?php if (isset($emailTaken)) { ?>
+                    <p><?php echo $emailTaken ?> </p>
+                <?php } ?>
 
-            <button class="btn" name="edit" type="submit">Edit</button>
+                <button class="btn" name="edit" type="submit">Edit</button>
 
-        </form>
+            </form>
+        </div>
     </div>
     <?php require('./inc/footer.php') ?>
     <script src="./js/dashboard.js"></script>

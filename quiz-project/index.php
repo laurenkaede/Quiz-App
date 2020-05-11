@@ -30,30 +30,20 @@ if (isset($_SESSION['userId'])) {
 <body>
 
     <div class="container">
+        <div id="home" class="flex-center flex-column content">
 
-        <?php if (isset($user)) { ?>
-            <div class="container">
-                <div id="home" class="flex-center flex-column">
-                    <h1>Welcome to the Disney quiz, <?php echo $user->username ?>!</h1>
+            <?php if (isset($user)) { ?>     
+                        <h1>Welcome to the Disney quiz, <?php echo $user->username ?>!</h1>
 
-                    <a class="btn" href="quiz.php">Play</a>
-                    <a class="btn" href="scoreboard.php">Top 10 Scores</a>
-
-                </div>
-            </div>
-
-        <?php } else { ?>
-            <div class="container">
-                <div id="home" class="flex-center flex-column">
-                    <h1>Welcome, Guest!</h1>
-                    <h3>Please Login or Register to access the quiz!</h3>
-                </div>
-            </div>
-        <?php } ?>
-
+                        <a class="btn" href="quiz.php">Play</a>
+                        <a class="btn" href="scoreboard.php">Top 10 Scores</a>
+            <?php } else { ?>
+                        <h1>Welcome, Guest!</h1>
+                        <h3>Please Login or Register to access the quiz!</h3>  
+            <?php } ?>
+        </div>
     </div>
     <?php require('./inc/footer.php') ?>
-    <script src="./js/index.js"></script>
 </body>
 
 </html>

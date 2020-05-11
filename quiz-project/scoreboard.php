@@ -4,9 +4,8 @@ if (isset($_SESSION['userId'])) {
     require('./config/db.php');
 
     $userId = $_SESSION['userId'];
-    $sql = 'SELECT username, userscore, usertime FROM users ORDER by userscore DESC, usertime ASC LIMIT 10';
 
-    $stmt = $pdo->prepare($sql);
+    $stmt = $pdo->prepare('SELECT username, userscore, usertime FROM users ORDER by userscore DESC, usertime ASC LIMIT 10');
     $stmt->execute();
     $users = $stmt->fetchAll();
 
@@ -68,7 +67,6 @@ if (isset($_SESSION['userId'])) {
         </div>
     </div>
     <?php require('./inc/footer.php') ?>
-    <script src="./js/scoreboard.js"></script>
 </body>
 
 </html>

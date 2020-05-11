@@ -1,7 +1,7 @@
 .choice-container {
   display: flex;
   margin-bottom: 0.5rem;
-  width: 100%;
+  width: 90%;
   font-size: 1.8rem;
   border: 0.1rem solid rgba(235, 86, 235, 0.25);
   background-color: white;
@@ -22,7 +22,7 @@
 
 .choice-text {
   padding: 1.5rem;
-  width: 100%;
+  width: 90%;
 }
 
 .correct {
