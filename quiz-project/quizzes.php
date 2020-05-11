@@ -24,20 +24,20 @@ if (isset($_SESSION['userId'])) {
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="./inc/navbar.css">
     <link rel="stylesheet" href="./css/index.css">
-    <title>Scoreboards</title>
+    <title>Quiz</title>
 </head>
 
 <body>
 
     <div class="container">
         <div id="home" class="flex-center flex-column content">
+  
+                        <h1>Welcome to the quiz page, <?php echo $user->username ?>!</h1>
 
-            <h1>Welcome to the scoreboard page, <?php echo $user->username ?>!</h1>
-
-            <a class="btn" href="disneyScoreboard.php">Disney Scoreboard</a>
-            <a class="btn" href="avengersScoreboard.php">Avengers Scoreboard</a>
-            <a class="btn" href="starwarsScoreboard.php">Star Wars Scoreboard</a>
-
+                        <a class="btn" href="disneyQuiz.php">Disney Quiz</a>
+                        <a class="btn" href="avengersQuiz.php">Avengers Quiz</a>
+                        <a class="btn" href="starwarsQuiz.php">Star Wars Quiz</a>
+          
         </div>
     </div>
     <?php require('./inc/footer.php') ?>

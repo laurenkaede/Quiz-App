@@ -69,6 +69,15 @@ h4 {
   color: white;
 }
 
+h5 {
+  color: white;
+  background-color: black;
+  padding: 10px;
+  width: 19%;
+  text-align: flex-end;
+}
+
+
 a {
   font-size: 22px;
 }
@@ -77,14 +86,19 @@ ul {
   color: rgb(182, 112, 182);
 }
 
-/* p {
-  color: white;
-} */
-
 .container {
-  
   width: 100vw;
   height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 80rem;
+  margin: 0 auto;
+}
+
+.containerAdmin {
+  width: 100vw;
+  height: 80vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -95,12 +109,24 @@ ul {
 .container > * {
   width: 100%;
 }
+.containerAdmin > * {
+  width: 100%;
+}
 
 .flex-column {
   display: flex;
   flex-direction: column;
   background-color: rgba(49, 48, 48, 0.8);
   height: 100vh;
+  padding: 30px;
+}
+
+.flex-columnAdmin {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(49, 48, 48, 0.8);
+  margin-top: 100px;
+  height: 280vh;
   padding: 30px;
 }
 
@@ -213,7 +239,7 @@ select:hover {
 }
 
 .padding {
-  padding-top: 75%;
+  padding-top: 250%;
 }
 
 img {
