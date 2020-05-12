@@ -30,13 +30,13 @@ if (isset($_SESSION['userId'])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="./inc/navbar.css">
+    <link rel="stylesheet" href="./css/navbar.css">
     <link rel="stylesheet" href="./css/index.css">
     <title>Dashboard</title>
 </head>
 
 <body>
-    <div class="container">
+    <div class="container mainImg">
         <div id="home" class="flex-center flex-column content">
             <h1>Update Details </h1>
 
@@ -60,7 +60,6 @@ if (isset($_SESSION['userId'])) {
         </div>
     </div>
     <?php require('./inc/footer.php') ?>
-    <script src="./js/dashboard.js"></script>
 </body>
 
 </html>

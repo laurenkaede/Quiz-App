@@ -1,0 +1,242 @@
+{"results": [
+    {
+        "id": "21",
+        "category": "avengers",
+        "image": "img/q21.jpeg",
+        "question": "In the comic book series, who were the original Avengers?",
+        "answer": "Ant-Man, the Hulk, Iron Man, Thor and the Wasp",
+        "incorrect_answers": [
+            "Batman, Spider-Man, Superman and Wonder Woman",
+            "The Hulk, Howard The Duck, Thor and Black Widow",
+            "The Incredibles"
+        ]
+    },
+    {
+        "id": "22",
+        "category": "avengers",
+        "image": "img/q22.jpeg",
+        "question": "In the 2012 movie, The Avengers features Captain America. What is his real name?",
+        "answer": "Steve Rogers",
+        "incorrect_answers": [
+            "Buck Rogers",
+            "Ted Rogers",
+            "Tony Stark"
+        ]
+    },
+    {
+        "id": "23",
+        "category": "avengers",
+        "image": "img/q23.jpeg",
+        "question": "Who is the leader of S.H.I.E.L.D?",
+        "answer": "Nick Fury",
+        "incorrect_answers": [
+            "Tony Stark",
+            "Bruce Banner",
+            "Diana Prince"
+        ]
+    },
+    {
+        "id": "24",
+        "category": "avengers",
+        "image": "img/q24.jpeg",
+        "question": "Which superhero does Bruce Banner transform into?",
+        "answer": "The Hulk",
+        "incorrect_answers": [
+            "Iron Man",
+            "Hawkeye",
+            "Thor"
+        ]
+    },
+    {
+        "id": "25",
+        "category": "avengers",
+        "image": "img/q25.jpeg",
+        "question": "Who is Loki's adoptive brother?",
+        "answer": "Thor",
+        "incorrect_answers": [
+            "Tony Stark",
+            "Peter Parker",
+            "Bruce Wayne"
+        ]
+    },
+    {
+        "id": "26",
+        "category": "avengers",
+        "image": "img/q26.jpeg",
+        "question": "What's the name of the mysterious blue glowing cube that Loki uses as a weapon?",
+        "answer": "Tesseract",
+        "incorrect_answers": [
+            "The Orb",
+            "The Force",
+            "UV Lamp"
+        ]
+    },
+    {
+        "id": "27",
+        "category": "avengers",
+        "image": "img/q27.jpeg",
+        "question": "Which US city do the Avengers battle the Chitauri?",
+        "answer": "New York City",
+        "incorrect_answers": [
+            "Los Angeles",
+            "Washington, DC",
+            "Miami"
+        ]
+    },
+    {
+        "id": "28",
+        "category": "avengers",
+        "image": "img/q28.jpeg",
+        "question": "Who diverts a nuclear missile into a wormhole and defeats the Chitauri army?",
+        "answer": "Iron Man",
+        "incorrect_answers": [
+            "Black Widow",
+            "The Hulk",
+            "Thor"
+        ]
+    },
+    {
+        "id": "29",
+        "category": "avengers",
+        "image": "img/q29.jpeg",
+        "question": "What weapon does Thor carry?",
+        "answer": "A Hammer",
+        "incorrect_answers": [
+            "A Bow and Arrow",
+            "A Catapult",
+            "A Sword"
+        ]
+    },
+    {
+        "id": "30",
+        "category": "avengers",
+        "image": "img/q30.jpeg",
+        "question": "In Avengers: Age of Ultron, what is the name of the villain who wants to destroy Earth?",
+        "answer": "Ultron",
+        "incorrect_answers": [
+            "Green Goblin",
+            "The Penguin",
+            "The Joker"
+        ]
+    },
+    {
+        "id": "31",
+        "category": "avengers",
+        "image": "img/q31.jpeg",
+        "question": "How does Black Widow turn the Hulk back into Bruce Banner?",
+        "answer": "With a Lullaby",
+        "incorrect_answers": [
+            "By Asking Politely",
+            "With a Text Message",
+            "With a Special Potion"
+        ]
+    },
+    {
+        "id": "32",
+        "category": "avengers",
+        "image": "img/q32.jpeg",
+        "question": "Who sells Ultron Vibranium and instantly makes $1.285 billion?",
+        "answer": "Ulysses Klaue",
+        "incorrect_answers": [
+            "Bruce Banner",
+            "Diana Prince",
+            "Tony Stark"
+        ]
+    },
+    {
+        "id": "33",
+        "category": "avengers",
+        "image": "img/q33.jpeg",
+        "question": "What is Clint Barton's superhero name?",
+        "answer": "Hawkeye",
+        "incorrect_answers": [
+            "Black Panther",
+            "Iron Man",
+            "Thor"
+        ]
+    },
+    {
+        "id": "34",
+        "category": "avengers",
+        "image": "img/q34.jpeg",
+        "question": "In Avengers: Infinity War, what is the name of the villain who's on a mission to collect the infinity stones?",
+        "answer": "Thanos",
+        "incorrect_answers": [
+            "Malekith",
+            "Darren Cross",
+            "Helmut Demo"
+        ]
+    },
+    {
+        "id": "35",
+        "category": "avengers",
+        "image": "img/q35.jpeg",
+        "question": "Which other superhero team do the Avengers join with to try to prevent this?",
+        "answer": "Guardians of the Galaxy",
+        "incorrect_answers": [
+            "The Fantastic Four",
+            "The Incredibles",
+            "The Mighty Morphin Power Rangers"
+        ]
+    },
+    {
+        "id": "36",
+        "category": "avengers",
+        "image": "img/q36.jpeg",
+        "question": "Peter Parker appears in Avengers: Infinity War. Who's he better known as?",
+        "answer": "Spider-Man",
+        "incorrect_answers": [
+            "Batman",
+            "Captain Underpants",
+            "War Machine"
+        ]
+    },
+    {
+        "id": "37",
+        "category": "avengers",
+        "image": "img/q37.jpeg",
+        "question": "In the films, what does S.H.I.E.L.D. stand for?",
+        "answer": "Strategic Homeland Intervention, Enforcement and Logistics Division",
+        "incorrect_answers": [
+            "Supreme Headquarters, International Espionage, Law-Enforcement Division",
+            "Strategic Hazard Intervention Espionage Logistics Directorate",
+            "Superheroes Help In Exciting Logical Display"
+        ]
+    },
+    {
+        "id": "38",
+        "category": "avengers",
+        "image": "img/q38.jpeg",
+        "question": "Which Marvel character has never appeared in The Avengers films?",
+        "answer": "The Wasp",
+        "incorrect_answers": [
+            "Hawkeye",
+            "Iron Man",
+            "Captain America"
+        ]
+    },
+    {
+        "id": "39",
+        "category": "avengers",
+        "image": "img/q39.jpeg",
+        "question": "Who originally created the Avengers?",
+        "answer": "Stan Lee and Jack Kirby",
+        "incorrect_answers": [
+            "Ant and Dec",
+            "Paul Hollywood and Mary Berry",
+            "Dennis and Gnasher"
+        ]
+    },
+    {
+        "id": "40",
+        "category": "avengers",
+        "image": "img/q40.jpg",
+        "question": "Which Infinity Stone is Dr. Strange responsible for protecting?",
+        "answer": "Time Stone",
+        "incorrect_answers": [
+            "Reality Stone",
+            "Mind Stone",
+            "Space Stone"
+        ]
+    }
+]}

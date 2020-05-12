@@ -5,8 +5,8 @@
 
     <?php if (isset($user) && $user->userrole === "Guest") { ?>
       <li><a href="dashboard.php">Dashboard</a></li>
-      <li><a href="quizzes.php">Quiz</a></li>
-      <li><a href="scoreboard.php">Scoreboard</a></li>
+      <li><a href="quizzes.php">Quizzes</a></li>
+      <li><a href="scoreboard.php">Scoreboards</a></li>
       <li><a href="logout.php">Logout</a></li>
     <?php } ?>
 
@@ -18,8 +18,8 @@
     <?php if (($user->userrole === "Admin")) { ?>
       <li><a href="admin.php">Admin</a></li>
       <li><a href="dashboard.php">Dashboard</a></li>
-      <li><a href="quizzes.php">Quiz</a></li>
-      <li><a href="scoreboard.php">Scoreboard</a></li>
+      <li><a href="quizzes.php">Quizzes</a></li>
+      <li><a href="scoreboard.php">Scoreboards</a></li>
       <li><a href="logout.php">Logout</a></li>
 
     <?php } ?>

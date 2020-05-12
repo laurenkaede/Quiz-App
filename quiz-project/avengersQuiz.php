@@ -24,14 +24,14 @@ if (isset($_SESSION['userId'])) {
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <link rel="stylesheet" href="./inc/navbar.css">
+  <link rel="stylesheet" href="./css/navbar.css">
   <link rel="stylesheet" href="./css/index.css">
   <link rel="stylesheet" href="./css/quiz.css">
   <title>Disney Quiz</title>
 </head>
 
 <body>
-  <div class="container">
+  <div class="container avengersImg">
     <div id="loader"></div>
     <div id="game" class="justify-center flex-column content hidden">
       <div id="hud">
@@ -78,7 +78,7 @@ if (isset($_SESSION['userId'])) {
     </div>
   </div>
   <?php require('./inc/footer.php') ?>
-  <script src="./js/avengersQuiz.js"></script>
+  <script src="./js/avengers/avengersQuiz.js"></script>
 </body>
 
 </html>

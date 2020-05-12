@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    background-color: #333;
+    padding: 15px 25px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+ul li {
+    list-style: none;  
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    margin-right: 35px;
+    margin-left: 5px;
+    
+}

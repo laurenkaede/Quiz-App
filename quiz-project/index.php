@@ -22,18 +22,18 @@ if (isset($_SESSION['userId'])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width= , initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="./inc/navbar.css">
+    <link rel="stylesheet" href="./css/navbar.css">
     <link rel="stylesheet" href="./css/index.css">
     <title>Quiz</title>
 </head>
 
 <body>
 
-    <div class="container">
+    <div class="container mainImg">
         <div id="home" class="flex-center flex-column content">
 
             <?php if (isset($user)) { ?>     
-                        <h1>Welcome Disney quizzes, <?php echo $user->username ?>!</h1>
+                        <h1>Welcome to Disney quizzes, <?php echo $user->username ?>!</h1>
 
                         <a class="btn" href="quizzes.php">Play</a>
                         <a class="btn" href="scoreboard.php">Top 10 Scores</a>

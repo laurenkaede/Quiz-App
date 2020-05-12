@@ -27,16 +27,16 @@ if (isset($_SESSION['userId'])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="./inc/navbar.css">
+    <link rel="stylesheet" href="./css/navbar.css">
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/scoreboard.css">
     <title>Star Wars Scoreboard</title>
 </head>
 
 <body>
-    <div class="container">
+    <div class="container starwarsImg">
         <div id="highScores" class="flex-center flex-column">
-            <h1 id="finalScore">Star Wars High Scores</h1>
+            <h1 class="starwarsFont" id="finalScore">STAR WARS High Scores</h1>
             <table>
                 <thead>
 
@@ -48,17 +48,15 @@ if (isset($_SESSION['userId'])) {
 
                     <?php foreach ($users as $score) { ?>
                         <tr>
-                            <td> <?php echo $score->userstarwarsname; ?></td>
+                            <td> <?php echo $score->username; ?></td>
                             <td> <?php echo $score->userstarwarsscore; ?></td>
                             <td> <?php echo $score->userstarwarstime; ?></td>
                         </tr>
                     <?php } ?>
 
                 <tbody>
-            </table>
-            </br>
-            </br>
-            </br>
+            </table></br></br></br>
+            
             <?php if($user->userstarwarsscore > 0 ) { ?>
                 <a class="btn" href="starwarsQuiz.php">Play Again</a>
         <?php } ?>

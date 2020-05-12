@@ -24,7 +24,6 @@ if (isset($_POST['login'])) {
 
 ?>
 
-
 <?php require('./inc/navbar.php'); ?>
 
 <!DOCTYPE html>
@@ -34,14 +33,14 @@ if (isset($_POST['login'])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="./inc/navbar.css">
+    <link rel="stylesheet" href="./css/navbar.css">
     <link rel="stylesheet" href="./css/index.css">
     <title>Login</title>
 </head>
 
 <body>
 
-    <div class="container" class="background">
+    <div class="container mainImg">
         <div id="home" class="flex-center flex-column content">
             <h1>User Login</h1>
             <form action="login.php" method="POST">
@@ -63,10 +62,7 @@ if (isset($_POST['login'])) {
         </div>
     </div>
 
-
-
     <?php require('./inc/footer.php') ?>
-    <script src="./js/login.js"></script>
 </body>
 
 </html>

@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Open+Sans+Condensed:wght@300&family=Quicksand&display=swap');
 @import url(http://allfont.net/allfont.css?fonts=disneypark);
+@import url(//db.onlinewebfonts.com/c/44a21eecd860f09edafc460507831238?family=The+Avengers);
+@import url(//db.onlinewebfonts.com/c/c00548f5d217ed324ae9096051927001?family=STARWARS);
 
 :root {
   background-image: 
@@ -7,16 +9,67 @@
     rgba(221, 216, 216, 0), 
     rgba(90, 88, 88, 0.0)
   ),
+  url("main3.png"); 
+  height: 100vh;
+  font-size: 62.5%;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;  
+}
+
+.mainImg {
+  background-image: 
+  linear-gradient(
+    rgba(221, 216, 216, 0), 
+    rgba(90, 88, 88, 0.0)
+  ),
+  
+  url("main2.jpeg");
+  height: 100vh;
+  font-size: 62.5%;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.disneyImg {
+  background-image: 
+  linear-gradient(
+    rgba(221, 216, 216, 0), 
+    rgba(90, 88, 88, 0.0)
+  ),
   
   url("disney.jpg");
-  /* background-image: linear-gradient(
-    to bottom,
-    #ca8dd2,
-    #d9a4d8,
-    #e6bbe0,
-    #f0d3e9,
-    #f8ecf4
-  );  */
+  height: 100vh;
+  font-size: 62.5%;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.avengersImg {
+  background-image: 
+  linear-gradient(
+    rgba(221, 216, 216, 0), 
+    rgba(90, 88, 88, 0.0)
+  ),
+  
+  url("avengers.jpg");
+  height: 100vh;
+  font-size: 62.5%;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.starwarsImg {
+  background-image: 
+  linear-gradient(
+    rgba(221, 216, 216, 0), 
+    rgba(90, 88, 88, 0.0)
+  ),
+  
+  url("starwars.jpg");
   height: 100vh;
   font-size: 62.5%;
   background-position: center center;
@@ -44,6 +97,14 @@ h1 {
   color: #fffafdd2;
   margin-bottom: 5rem;
   text-align: center;
+}
+
+.avengerFont {
+  font-family: "The Avengers";
+}
+
+.starwarsFont {
+  font-family: "STARWARS";
 }
 
 h1 > span {
