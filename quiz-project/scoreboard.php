@@ -30,13 +30,13 @@ if (isset($_SESSION['userId'])) {
 <body>
 
     <div class="container mainImg">
-        <div id="home" class="flex-center flex-column content">
+        <div id="home" class="flex-center flex-direction flex-column content">
 
-            <h1>Welcome to the scoreboards, <?php echo $user->username ?>!</h1>
+            <h1>Choose a scoreboard, <?php echo $user->username ?>!</h1>
 
-            <a class="btn" href="disneyScoreboard.php">Disney Scoreboard</a>
-            <a class="btn" href="avengersScoreboard.php">Avengers Scoreboard</a>
-            <a class="btn" href="starwarsScoreboard.php">Star Wars Scoreboard</a>
+            <a class="btn" href="disneyScoreboard.php">Disney Top 10</a>
+            <a class="btn" href="avengersScoreboard.php">Avengers Top 10</a>
+            <a class="btn" href="starwarsScoreboard.php">Star Wars Top 10</a>
 
         </div>
     </div>

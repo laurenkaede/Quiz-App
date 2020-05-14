@@ -62,8 +62,6 @@ if (isset($_SESSION['userId'])) {
             <?php if($user->useravengersscore > 0 ) { ?>
                 <a class="btn" href="avengersQuiz.php">Play Again</a>
         <?php } ?>
-            
-            <a class="btn" href="index.php">Go Home</a>
         </div>
     </div>
     <?php require('./inc/footer.php') ?>

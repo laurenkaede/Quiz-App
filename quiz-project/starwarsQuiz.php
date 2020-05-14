@@ -33,7 +33,7 @@ if (isset($_SESSION['userId'])) {
 <body>
   <div class="container starwarsImg">
     <div id="loader"></div>
-    <div id="game" class="justify-center flex-column content hidden">
+    <div id="game" class="justify-center flex-direction flex-column content hidden">
       <div id="hud">
         <div id="hud-item">
           <h4 id="progressText" class="hud-prefix">Question</h4>

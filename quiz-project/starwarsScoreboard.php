@@ -56,12 +56,10 @@ if (isset($_SESSION['userId'])) {
 
                 <tbody>
             </table></br></br></br>
-            
-            <?php if($user->userstarwarsscore > 0 ) { ?>
+
+            <?php if ($user->userstarwarsscore > 0) { ?>
                 <a class="btn" href="starwarsQuiz.php">Play Again</a>
-        <?php } ?>
-            
-            <a class="btn" href="index.php">Go Home</a>
+            <?php } ?>
         </div>
     </div>
     <?php require('./inc/footer.php') ?>

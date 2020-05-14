@@ -30,9 +30,9 @@ if (isset($_SESSION['userId'])) {
 <body>
 
     <div class="container mainImg">
-        <div id="home" class="flex-center flex-column content">
+        <div id="home" class="flex-center flex-direction flex-column content">
 
-            <h1>Welcome to the quizzes, <?php echo $user->username ?>!</h1>
+            <h1>Choose a quiz, <?php echo $user->username ?>!</h1>
 
             <a class="btn" href="disneyQuiz.php">Disney Quiz</a>
             <a class="btn" class="avengerFont" href="avengersQuiz.php">Avengers Quiz</a>

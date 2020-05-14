@@ -33,7 +33,7 @@ table {
     font-size: 20px;
     text-align: center;
     font-weight: bold;
-    background-color: rgba(255, 255, 255, 0.603);
+    background-color: rgba(255, 255, 255, 0.550);
 
   }
   
@@ -42,7 +42,7 @@ table {
   }
   
   thead th {
-    background-color: #e2c0f7;
+    background-color: rgba(88, 52, 92, 0.699);
     width: 150px;
   }
   

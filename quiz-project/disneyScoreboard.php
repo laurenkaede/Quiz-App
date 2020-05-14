@@ -60,8 +60,6 @@ if (isset($_SESSION['userId'])) {
             <?php if ($user->userdisneyscore > 0) { ?>
                 <a class="btn" href="disneyQuiz.php">Play Again</a>
             <?php } ?>
-
-            <a class="btn" href="index.php">Go Home</a>
         </div>
     </div>
     <?php require('./inc/footer.php') ?>

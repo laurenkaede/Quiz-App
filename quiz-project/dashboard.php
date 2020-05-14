@@ -37,7 +37,7 @@ if (isset($_SESSION['userId'])) {
 
 <body>
     <div class="container mainImg">
-        <div id="home" class="flex-center flex-column content">
+        <div id="home" class="flex-center flex-direction flex-column content">
             <h1>Update Details </h1>
 
             <form action="dashboard.php" method="POST">

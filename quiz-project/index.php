@@ -30,7 +30,7 @@ if (isset($_SESSION['userId'])) {
 <body>
 
     <div class="container mainImg">
-        <div id="home" class="flex-center flex-column content">
+        <div id="home" class="flex-center flex-direction flex-column content">
 
             <?php if (isset($user)) { ?>     
                         <h1>Welcome to Disney quizzes, <?php echo $user->username ?>!</h1>
@@ -38,7 +38,7 @@ if (isset($_SESSION['userId'])) {
                         <a class="btn" href="quizzes.php">Play</a>
                         <a class="btn" href="scoreboard.php">Top 10 Scores</a>
             <?php } else { ?>
-                        <h1>Welcome, Guest!</h1>
+                        <h1>Welcome, Guest!</h1><br>
                         <h3>Please Login or Register to access the quiz!</h3>  
             <?php } ?>
         </div>
